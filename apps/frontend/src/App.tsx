@@ -13,9 +13,13 @@ function App() {
       return;
     }
 
-    const response = await fetch(
-      `http://localhost:3000/api/url/shorten/${urlToShorten}`,
-    );
+    const response = await fetch("http://localhost:3000/api/url/shorten/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ url: urlToShorten }),
+    });
     const data: { url: string } = await response.json();
 
     setShortenedUrl(data.url);
@@ -49,7 +53,7 @@ function App() {
         <h3> Your URL will go from this:</h3>
         <h4>🫸https://your-beautiful-gigantic-smelling-strange-url.com🫷</h4>
         <h3>To this:</h3>
-        <h4>🫸https://our-tiny-url.com/zaza🫷</h4>
+        <h4>🫸https://our-tiny-url.com/J4b0R4🫷</h4>
         <div>
           <input
             type="text"
@@ -84,7 +88,7 @@ function App() {
             Tell me!
           </button>
         </div>
-        {counter && <h2>Wow! {counter} clicks!</h2>}
+        {counter || (counter === 0 && <h2>Wow! {counter} clicks!</h2>)}
       </div>
     </div>
   );

@@ -38,6 +38,10 @@
       border: none;
       font-size: 17px;
       border-radius: 0 8px 8px 0;
+      &:active {
+        background-color: var(--primary-white-2);
+        font-size: 98%;
+      }
     }
   }
 }
@@ -88,6 +92,10 @@ body {
       border: none;
       font-size: 17px;
       border-radius: 0 8px 8px 0;
+      &:active {
+        background-color: var(--primary-white-2);
+        font-size: 98%;
+      }
     }
   }
 }

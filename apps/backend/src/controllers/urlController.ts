@@ -16,7 +16,7 @@ export const createShortenUrl = (
   next: NextFunction,
 ) => {
   try {
-    const link_to_shorten = String(req.params.url);
+    const link_to_shorten = String(req.body.url);
     let random_slug = generate_random_slug();
 
     urls.push({
@@ -64,9 +64,10 @@ export const getClickCounter = (
 
     if (correct_slug) {
       res.send({ count: correct_slug.click_count });
+    } else {
+      res.status(404);
+      res.send({ message: "Shorten not found" });
     }
-    res.status(404);
-    res.send({ message: "Shorten not found" });
   } catch (error) {
     next(error);
   }

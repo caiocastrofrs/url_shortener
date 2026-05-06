@@ -8,7 +8,7 @@ import {
 
 const router = Router();
 
-router.get("/shorten/:url", createShortenUrl);
+router.post("/shorten", createShortenUrl);
 router.get("/redirect/:slug", redirectToOrigin);
 router.get("/:slug", getClickCounter);
 
