@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --primary-white: rgb(230, 228, 217);
+  --primary-black: rgb(40, 39, 38);
+  --primary-black-2: rgb(52, 51, 49);
+  --primary-black-3: rgb(64, 62, 60);
+  --primary-black-darker: rgb(28, 27, 26);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

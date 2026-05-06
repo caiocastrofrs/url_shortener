@@ -1,0 +1,115 @@
+.main-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--primary-black);
+  border: 1px solid var(--primary-black-2);
+  border-radius: 5px;
+  padding: 10px;
+
+  & h2,
+  h3,
+  h3,
+  h4 {
+    text-align: center;
+    color: var(--primary-white);
+  }
+
+  & h4 {
+    width: max-content;
+    margin: 20px auto;
+    background-color: var(--primary-black-3);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  & div {
+    display: flex;
+    justify-content: center;
+    & input {
+      width: 300px;
+      height: 50px;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      background-color: var(--primary-white);
+      padding-left: 10px;
+    }
+
+    & button {
+      width: 70px;
+      border: none;
+      font-size: 17px;
+      border-radius: 0 8px 8px 0;
+    }
+  }
+}
+
+body {
+  background-color: var(--primary-black-darker);
+}
+
+.wrapper {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.click-container {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-black);
+  border: 1px solid var(--primary-black-2);
+  border-radius: 5px;
+  padding: 10px;
+
+  & h2 {
+    text-align: center;
+    color: var(--primary-white);
+  }
+
+  & div {
+    display: flex;
+    justify-content: center;
+    & input {
+      width: 270px;
+      height: 50px;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      background-color: var(--primary-white);
+      padding-left: 10px;
+    }
+
+    & button {
+      width: 100px;
+      border: none;
+      font-size: 17px;
+      border-radius: 0 8px 8px 0;
+    }
+  }
+}
+
+.shortened-url {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 10px;
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+  border: 1px solid var(--primary-black-2);
+  border-radius: 5px;
+  text-align: center;
+
+  & div {
+    border-radius: 5px;
+    padding: 10px;
+    width: max-content;
+    background-color: var(--primary-black-3);
+    margin: 0 auto;
+    & a {
+      color: var(--primary-white);
+    }
+  }
+}
